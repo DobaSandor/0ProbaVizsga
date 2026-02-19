@@ -1,0 +1,10 @@
+Aragorn;Harcos;95;Kósza Klán;15000
+Gandalf;Mágus;99;Istari;25000
+Gimli;Harcos;88;Hegymélyi Csarnok;12000
+Raistlin;Mágus;92;Főnix Rendje;18500
+Legolas;Harcos;91;Erdőtünde;14000
+Hermione;Mágus;85;Főnix Rendje;9000
+Conan;Harcos;70;Cimmeria;5000
+Morgana;Mágus;78;Sötét Kör;11000
+Arthur;Harcos;82;Kerekasztal;9500
+Yennefer;Mágus;89;Vengerberg;16000
