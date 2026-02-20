@@ -1,6 +1,0 @@
-harcos;Harcos
-magus;Mágus
-ijasz;Íjász
-tolvaj;Tolvaj
-pap;Pap
-barbar;Barbár

@@ -1,0 +1,7 @@
+Forrasok/
+bin/
+obj/
+generated/
+node_modules/
+.vs/
+Annus_Kitti_megoldasok.zip

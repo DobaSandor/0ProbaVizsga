@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Új Kalandor Felvétele</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./fantasy_style.css">
+    </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Viharbérc</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="heroes.html">Hősök</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="newrecruit.html">Új toborzás</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h3>Új Tanuló / Kalandor felvétele</h3>
+            </div>
+            <div class="card-body container">
+                <form action="#" method="post" class="row">
+                    <div class="mb-3 col-sm">
+                        <label for="nev" class="form-label">Név</label>
+                        <input type="text" class="form-control" id="nev" placeholder="Hős neve">
+                    </div>
+
+                    <div class="mb-3 col-sm">
+                        <label for="szarmazas" class="form-label">Származás</label>
+                        <input type="text" class="form-control" id="szarmazas" placeholder="Származási hely">
+                    </div>
+
+                    <div class="mb-3 col-sm">
+                        <!-- Dropdown menu bootsrap Kaszt-->
+                        <div class="dropdown show">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Válassz kasztot
+                            </button>
+                            <select class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <option value="harcos" class="dropdown-item">Harcos</option>
+                                <option value="magus" class="dropdown-item">Mágus</option>
+                                <option value="ijasz" class="dropdown-item">Íjász</option>
+                                <option value="tolvaj" class="dropdown-item">Tolvaj</option>
+                                <option value="pap" class="dropdown-item">Pap</option>
+                                <option value="barbar" class="dropdown-item">Barbár</option>
+                            </select>
+                          </div>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="szint" class="form-label">Kezdő Szint</label>
+                        <input type="number" class="form-control" id="szint" placeholder="Kezdő szint">
+                    <button type="submit" class="btn btn-primary mt-3 w-100">Toborzás</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

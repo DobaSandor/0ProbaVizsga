@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model hos {
+  id        Int    @id @default(autoincrement())
+  nev       String @db.VarChar(255)
+  szarmazas String @db.VarChar(255)
+  szint     Int
+  kasztId   Int?
+  kaszt     kaszt? @relation(fields: [kasztId], references: [id], onDelete: Restrict, onUpdate: Restrict, map: "hos_ibfk_1")
+
+  @@index([kasztId], map: "kasztId")
+}
+
+model kaszt {
+  id  Int    @id @default(autoincrement())
+  nev String @db.VarChar(255)
+  hos hos[]
+}

@@ -1,0 +1,10 @@
+body {
+    background-image: url('./castle_bg.jpg') !important;
+
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+nav {
+    padding: 14px !important;
+}
