@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model diak {
+  Id       Int    @id @default(autoincrement())
+  Nev      String @db.VarChar(255)
+  Palca    String @db.VarChar(255)
+  Eletpont Int
+  HazId    Int
+  haz      haz    @relation(fields: [HazId], references: [Id], onUpdate: Restrict, map: "diak_ibfk_1")
+
+  @@index([HazId], map: "HazId")
+}
+
+model haz {
+  Id         Int    @id @default(autoincrement())
+  Megnevezes String @db.VarChar(255)
+  Leiras     String @db.VarChar(255)
+  diak       diak[]
+}
